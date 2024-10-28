@@ -68,3 +68,4 @@ source/
 
 # Godot 4.x
 user://cache/
+*.DS_Store
