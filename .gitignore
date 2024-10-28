@@ -4,5 +4,67 @@
 export.cfg
 export_presets.cfg
 
+# Imported translations (automatically generated from CSV files)
+*.translation
+
 # Mono-specific ignores
 .mono/
+data_*/
+
+# Build results
+builds/
+bin/
+obj/
+
+# Generated project files
+*.csproj
+*.sln
+*.synctex.gz
+*.tmp
+*.tscn.tmp
+*.userprefs
+*.vcxproj*
+*.kdev*
+*.iml
+*.vs/
+*.sdf
+
+# IDE-specific ignores
+.idea/
+.vscode/
+*dirstamp
+
+# System/tool-specific ignores
+.DS_Store
+*~
+*.bak
+*.class
+*.dll
+*.dylib
+*.exe
+*.gch
+*.o
+*.os
+*.pyc
+*.so
+*.swp
+*.tmp
+*.zip
+thumbs.db
+desktop.ini
+Thumbs.db
+
+# Asset-related ignores
+*.blend1
+*.blend2
+*.blend3
+*.fbx
+*.max
+*.xcf
+source/
+
+# Godot cache directories
+.godot/
+
+# Godot 4.x
+user://cache/
