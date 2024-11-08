@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bc52b0ia7dbh2"]
+[gd_scene load_steps=4 format=3 uid="uid://bc52b0ia7dbh2"]
 
 [ext_resource type="PackedScene" uid="uid://c5dhixh8bdv3n" path="res://scenes/player/Player.tscn" id="1_vxg2q"]
 [ext_resource type="PackedScene" uid="uid://cu2agicd1dor5" path="res://scenes/environment/World.tscn" id="2_yyj6e"]
+[ext_resource type="Script" path="res://scripts/components/PlayerCamera.gd" id="3_3vq0p"]
 
 [node name="Main" type="Node"]
 
@@ -14,3 +15,8 @@ position = Vector2(578, 315)
 speed = 400.0
 
 [node name="World" parent="." instance=ExtResource("2_yyj6e")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_3vq0p")
+target_path = NodePath("../Player")
+deadzone_radius = 38.98
